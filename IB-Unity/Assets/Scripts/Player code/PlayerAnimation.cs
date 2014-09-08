@@ -17,12 +17,12 @@ public class PlayerAnimation : MonoBehaviour {
 	
 		playeranim.SetBool("indefense",defend);
 
-		if(Input.GetKeyDown(KeyCode.F))
+		if(Input.GetAxis("Defense") >0f)
 		   {
 			defend = true;
 			playershield.gameObject.SetActive(true);
 			}
-		if(Input.GetKeyUp(KeyCode.F))
+		if(Input.GetAxis("Defense") == 0)
 		{
 			defend = false;
 			playershield.gameObject.SetActive(false);

@@ -8,7 +8,6 @@ public class Playercontrols : MonoBehaviour {
 	public float playerspeed=0;
 
 
-
 	// Use this for initialization
 	void Start () {
 	

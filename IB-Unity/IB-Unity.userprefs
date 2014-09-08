@@ -1,9 +1,28 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Playercontrols.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Enemy code\Enemyattack.cs">
     <Files>
-      <File FileName="Assets\Scripts\Playercontrols.cs" Line="29" Column="91" />
+      <File FileName="Assets\Scripts\Enemy code\Enemyhealth.cs" Line="19" Column="33" />
+      <File FileName="Assets\Scripts\Enemy code\Enemyattack.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player code\Playerhealth.cs" Line="25" Column="32" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="Scripts" expanded="True">
+              <Node name="Enemy code" expanded="True">
+                <Node name="Enemyattack.cs" selected="True" />
+              </Node>
+              <Node name="Player code" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
