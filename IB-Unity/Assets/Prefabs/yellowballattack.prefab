@@ -13,7 +13,7 @@ GameObject:
   - 135: {fileID: 13500000}
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400000}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: yellowballattack
   m_TagString: ettack1
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ MonoBehaviour:
           value: Untagged
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000a040006469650100000000636f6c6c6973696f6e0000000001
+        byteData: 00002041006469650100000000636f6c6c6973696f6e0000000001
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -232,7 +232,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.3396672
+  m_Radius: .5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!198 &19800000
 ParticleSystem:

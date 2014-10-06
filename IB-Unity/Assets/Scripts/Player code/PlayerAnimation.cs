@@ -17,11 +17,12 @@ public class PlayerAnimation : MonoBehaviour {
 	
 		playeranim.SetBool("indefense",defend);
 
-		if(Input.GetAxis("Defense") >0f)
+		if(Input.GetAxis("Defense") >0f )
 		   {
 			defend = true;
 			playershield.gameObject.SetActive(true);
 			}
+
 		if(Input.GetAxis("Defense") == 0)
 		{
 			defend = false;
