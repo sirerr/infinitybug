@@ -25,6 +25,6 @@ public class Playercontrols : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-		rigidbody.AddForce(playerx* playerspeed, playery * playerspeed, 0,ForceMode.Acceleration);
+		rigidbody.AddForce(playerx* playerspeed, playery * playerspeed, 0,ForceMode.Force);
 	}
 }

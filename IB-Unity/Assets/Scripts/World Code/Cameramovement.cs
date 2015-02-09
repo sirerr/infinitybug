@@ -41,7 +41,7 @@ public class Cameramovement : MonoBehaviour {
 	{
 		changedirection = Random.Range(changetimemin,changetimemax);
 		yield return new WaitForSeconds(changedirection);
-		print("in corotine");
+	//	print("in corotine");
 		firstchoice();
 	}
 	

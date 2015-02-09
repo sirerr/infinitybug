@@ -1,9 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Modeling\main\UnityTestingArea\Assets\Scripts\ZG1\clickedtexture.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player code\Playerhealth.cs">
     <Files>
-      <File FileName="..\..\Modeling\main\UnityTestingArea\Assets\Scripts\ZG1\pickandpaste.cs" Line="14" Column="3" />
-      <File FileName="..\..\Modeling\main\UnityTestingArea\Assets\Scripts\ZG1\clickedtexture.cs" Line="25" Column="1" />
+      <File FileName="Assets\Scripts\Player code\Playerhealth.cs" Line="37" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

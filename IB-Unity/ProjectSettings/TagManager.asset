@@ -4,10 +4,11 @@
 TagManager:
   tags:
   - Enemy
-  - ettack1
-  - ettack2
+  - eattack1
+  - eattack2
   - pattack1
   - pattack2
+  - espawnp
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

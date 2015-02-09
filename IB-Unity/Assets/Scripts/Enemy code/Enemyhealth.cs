@@ -14,6 +14,11 @@ public class Enemyhealth : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+		if(ehealth <=0)
+		{
+			Destroy(this.gameObject);
+			Spawnsystem.deadenemy = true;
+		}
 	}
 
 	void OnCollisionEnter(Collision other)
