@@ -8,6 +8,7 @@ public class Playerattack : MonoBehaviour {
 	public float attackspeed = 0;
 	//stop to many shots
 	private bool waiter = true;
+
 	
 	void Start()
 	{
@@ -17,9 +18,10 @@ public class Playerattack : MonoBehaviour {
 	{
 		if(Input.GetAxis("Attack") == 1 && waiter)
 		{
+			float attackvel = 10f;
 			GameObject attack1;
-			attack1 = Instantiate(attackobj, attackpoint.position,Quaternion.identity) as GameObject;
-			attack1.rigidbody.velocity = new Vector3 (0,0,attackspeed);
+			attack1 = Instantiate(attackobj, attackpoint.transform.position,attackpoint.transform.rotation) as GameObject;
+		//	attack1.rigidbody.transform.Translate(0,0,attackspeed);
 			waiter = false;
 			StartCoroutine(Waitbetweenshot());
 		}
