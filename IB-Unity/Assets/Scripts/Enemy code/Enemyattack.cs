@@ -27,7 +27,7 @@ public class Enemyattack : MonoBehaviour {
 
 	IEnumerator waitandattack()
 	{
-		yield return new WaitForSeconds(3f);
+		yield return new WaitForSeconds(1f);
 
 		GameObject eattack1;
 

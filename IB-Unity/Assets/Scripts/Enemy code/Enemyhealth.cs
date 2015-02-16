@@ -5,6 +5,7 @@ public class Enemyhealth : MonoBehaviour {
 
 	public int ehealth =0;
 	public int ehealthtemp;
+	public GameObject edamageps;
 
 	// Use this for initialization
 	void Start () {
@@ -16,18 +17,24 @@ public class Enemyhealth : MonoBehaviour {
 	
 		if(ehealth <=0)
 		{
-			Destroy(this.gameObject);
+			Destroy(transform.parent.gameObject);
+
 			Spawnsystem.deadenemy = true;
 		}
 	}
 
 	void OnCollisionEnter(Collision other)
 	{
-		print("hit");
+		int hitcounter = 0;
+		ContactPoint ehit;
+		ehit = other.contacts[hitcounter];
+
+		Instantiate(edamageps,ehit.point,transform.rotation);
 
 		if(other.collider.tag == "pattack1")
 		{
 			ehealth = ehealth -1;
 		}
+
 	}
 }

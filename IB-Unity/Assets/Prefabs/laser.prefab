@@ -114,6 +114,7 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.Translate
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.CollisionEvent
         - HutongGames.PlayMaker.Actions.CollisionEvent
@@ -121,10 +122,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000300000008000000
-        actionHashCodes: 3708ec1a621d94f2621d94f2
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 000000000a0000000d00000012000000
+        actionHashCodes: 1d4debbb3708ec1a621d94f2621d94f2
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -139,7 +141,15 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -161,13 +171,23 @@ MonoBehaviour:
           value: Enemy
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000a040006469650100000000636f6c6c6973696f6e32000000000100000000636f6c6c6973696f6e0000000001
+        byteData: 00000000000000000000000001000000000100000000010000f0410001000000010100000000a040006469650100000000636f6c6c6973696f6e32000000000100000000636f6c6c6973696f6e0000000001
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000001700000001000000070000001200000017000000130000000f000000070000001200000017000000130000000f000000
+        paramDataType: 140000001c0000000f0000000f0000000f00000007000000010000000100000001000000010000000f0000001700000001000000070000001200000017000000130000000f000000070000001200000017000000130000000f000000
         paramName:
+        - gameObject
+        - vector
+        - x
+        - y
+        - z
+        - space
+        - perSecond
+        - everyFrame
+        - lateUpdate
+        - fixedUpdate
         - time
         - finishEvent
         - realTime
@@ -181,8 +201,8 @@ MonoBehaviour:
         - sendEvent
         - storeCollider
         - storeForce
-        paramDataPos: 00000000050000000800000009000000000000000d00000000000000170000001c00000001000000200000000100000029000000
-        paramByteDataSize: 05000000030000000100000004000000000000000a00000000000000050000000400000000000000090000000000000005000000
+        paramDataPos: 00000000000000000d00000012000000170000001c0000002000000021000000220000002300000024000000290000002c0000002d0000000000000031000000000000003b000000400000000100000044000000010000004d000000
+        paramByteDataSize: 000000000d000000050000000500000005000000040000000100000001000000010000000100000005000000030000000100000004000000000000000a00000000000000050000000400000000000000090000000000000005000000
     - name: destroy self
       description: 
       colorIndex: 0

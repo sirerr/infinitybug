@@ -324,6 +324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ehealth: 5
   ehealthtemp: 0
+  edamageps: {fileID: 175960, guid: 9cba7ce9d446b8c4aa5b7dba70d20286, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

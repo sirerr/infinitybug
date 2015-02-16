@@ -41,11 +41,11 @@ ModelImporter:
     400032: rightleg2
     400034: rightleg2_001
     400036: root
-    2300000: humanoid
-    3300000: humanoid
     4300000: humanoid
     7400000: Default Take
-    7400002: Idle
+    7400002: humanoidskelAction_002
+    7400004: legmovement
+    7400006: legmovement
     9500000: //RootNode
     11100000: //RootNode
     13700000: humanoid
@@ -56,28 +56,27 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    optimizeGameObjects: 1
+    optimizeGameObjects: 0
     motionNodeName: 
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
-    extraExposedTransformPaths:
-    - humanoidskel/root/main/rightarm1
+    extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Idle
-      takeName: humanoidskelAction
+      name: legmovement
+      takeName: humanoidskelAction_004
       firstFrame: 0
       lastFrame: 9
       wrapMode: 2
-      orientationOffsetY: 0
+      orientationOffsetY: -90
       level: 0
       cycleOffset: 0
       loop: 1
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -86,10 +85,48 @@ ModelImporter:
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
       mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      bodyMask: 01000000010000000100000001000000010000000000000000000000000000000000000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: humanoid
+        weight: 1
+      - path: humanoidskel
+        weight: 1
+      - path: humanoidskel/root
+        weight: 1
+      - path: humanoidskel/root/main
+        weight: 1
+      - path: humanoidskel/root/main/backaddon
+        weight: 1
+      - path: humanoidskel/root/main/head
+        weight: 1
+      - path: humanoidskel/root/main/head/left_temple
+        weight: 1
+      - path: humanoidskel/root/main/head/right_temple
+        weight: 1
+      - path: humanoidskel/root/main/leftarm1
+        weight: 1
+      - path: humanoidskel/root/main/leftarm1/leftarm2
+        weight: 1
+      - path: humanoidskel/root/main/leftleg1
+        weight: 1
+      - path: humanoidskel/root/main/leftleg1/leftleg2
+        weight: 1
+      - path: humanoidskel/root/main/leftleg1/leftleg2/leftleg2_001
+        weight: 1
+      - path: humanoidskel/root/main/rightarm1
+        weight: 1
+      - path: humanoidskel/root/main/rightarm1/rightarm2
+        weight: 1
+      - path: humanoidskel/root/main/rightleg1
+        weight: 1
+      - path: humanoidskel/root/main/rightleg1/rightleg2
+        weight: 1
+      - path: humanoidskel/root/main/rightleg1/rightleg2/rightleg2_001
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
     isReadable: 1
@@ -127,6 +164,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: root
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   additionalBone: 0
   userData: 

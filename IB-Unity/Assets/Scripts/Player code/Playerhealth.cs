@@ -4,15 +4,17 @@ using System.Collections;
 public class Playerhealth : MonoBehaviour {
 
 
-	public int phealth;
-	public int attackdamage1;
-	public int attackdamage2;
-	private int healthtemp;
+	public float phealth;
+	public float attackdamage1;
+	public float attackdamage2;
+	private float healthtemp;
 	public GameObject playerspawnlocation;
 	public int playerlives = 0;
+	public float pubhealth = 0;
 
 	void Start()
 	{
+		pubhealth = phealth;
 		healthtemp = phealth;
 	}
 
@@ -20,7 +22,7 @@ public class Playerhealth : MonoBehaviour {
 	{
 		if(phealth <= 0)
 		{
-			//phealth = healthtemp;
+			 
 			transform.position = playerspawnlocation.transform.position;
 			phealth = healthtemp;
 
@@ -34,12 +36,15 @@ public class Playerhealth : MonoBehaviour {
 			if(other.collider.tag == "eattack1")
 			{
 				phealth = phealth - attackdamage1;
-			//	print ("attacked");
+				pubhealth = phealth;
+		
 			}
 			
 			if(other.collider.tag == "eattack2")
 			{
+
 				phealth = phealth - attackdamage2;
+				pubhealth = phealth;
 			}
 		}
 
