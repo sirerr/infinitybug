@@ -9,6 +9,7 @@ TagManager:
   - pattack1
   - pattack2
   - espawnp
+  - Powerup
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

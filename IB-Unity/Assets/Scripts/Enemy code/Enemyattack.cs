@@ -31,8 +31,7 @@ public class Enemyattack : MonoBehaviour {
 
 		GameObject eattack1;
 
-		eattack1 = Instantiate(eattackobj, gameObject.transform.position,transform.rotation) as GameObject;
-		eattack1.rigidbody.velocity = new Vector3 (0,0,eattackspeed);
+		Instantiate(eattackobj, gameObject.transform.position,transform.rotation);
 		attacking();
 	}
 }
