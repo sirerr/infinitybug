@@ -554,7 +554,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: Press Start to Begin
+  mText: '"Infinity Bug" Prototype, please press start to begin'
   mFontSize: 100
   mFontStyle: 0
   mAlignment: 0

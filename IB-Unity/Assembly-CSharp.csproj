@@ -811,9 +811,9 @@
      <Compile Include="Assets\Scripts\Player code\Playercontrols.cs" />
      <Compile Include="Assets\Scripts\Player code\Playerhealth.cs" />
      <Compile Include="Assets\Scripts\UI code\Gamemodeselection.cs" />
+     <Compile Include="Assets\Scripts\UI code\HudGP.cs" />
      <Compile Include="Assets\Scripts\World Code\Cameramovement.cs" />
      <Compile Include="Assets\Scripts\World Code\CenterControl.cs" />
-     <Compile Include="Assets\UI\Gamplayhud\HudGP.cs" />
      <Compile Include="Assets\iTween\iTween.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\ReadMe - 3.6.9.txt" />

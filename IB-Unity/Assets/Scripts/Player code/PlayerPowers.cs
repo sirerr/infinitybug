@@ -26,7 +26,7 @@ void OnCollisionEnter(Collision powerhit)
 
 		if(powerhit.collider.tag =="Powerup")
 		{
-			print ("got power up");
+		//	print ("got power up");
 			if(powercounter !=powerlimit )
 			{
 				powercounter++;

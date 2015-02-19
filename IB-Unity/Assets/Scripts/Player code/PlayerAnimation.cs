@@ -21,12 +21,14 @@ public class PlayerAnimation : MonoBehaviour {
 		   {
 			defend = true;
 			playershield.gameObject.SetActive(true);
+			HudGP.meterdistancespeed = .3f;
 			}
 
 		if(Input.GetAxis("Defense") == 0)
 		{
 			defend = false;
 			playershield.gameObject.SetActive(false);
+			HudGP.meterdistancespeed = 1f;
 		}
 	}
 }

@@ -7,6 +7,10 @@ public class Enemyhealth : MonoBehaviour {
 	public int ehealthtemp;
 	public GameObject edamageps;
 
+	//testcode
+	public GameObject powerup1;
+	//testcode
+
 	// Use this for initialization
 	void Start () {
 		ehealthtemp = ehealth;
@@ -17,9 +21,20 @@ public class Enemyhealth : MonoBehaviour {
 	
 		if(ehealth <=0)
 		{
-			Destroy(transform.parent.gameObject);
+			if(Spawnsystem.createpowerupcounter == Spawnsystem.powerupdeadcounter)
+			{
+				Instantiate(powerup1,transform.position,Quaternion.identity);
+				Spawnsystem.createpowerupcounter = 0;
 
-			Spawnsystem.deadenemy = true;
+				Destroy(transform.parent.gameObject);
+				Spawnsystem.deadenemy = true;
+			}
+				else
+			{
+				Spawnsystem.createpowerupcounter ++;
+				Destroy(transform.parent.gameObject);
+				Spawnsystem.deadenemy = true;
+			}
 		}
 	}
 
@@ -35,6 +50,12 @@ public class Enemyhealth : MonoBehaviour {
 		{
 			ehealth = ehealth -1;
 		}
+
+		if(other.collider.tag == "p-puattack1")
+		{
+			ehealth = 0;
+		}
+
 
 	}
 }

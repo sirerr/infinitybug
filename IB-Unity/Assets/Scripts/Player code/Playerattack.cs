@@ -48,7 +48,7 @@ public class Playerattack : MonoBehaviour {
 
 	gatherer = Instantiate(gatherenergyps,attackpoint.transform.position,attackpoint.transform.rotation) as GameObject;
 		gatherer.transform.parent = attackpoint.transform;
-		yield return new WaitForSeconds(4f);
+		yield return new WaitForSeconds(3f);
 		Instantiate(powerupattack1,attackpoint.transform.position,attackpoint.transform.rotation);
 		powerupref.powerpack1[powerupref.powercounter].gameObject.SetActive(false);
 		getpoweredup = false;

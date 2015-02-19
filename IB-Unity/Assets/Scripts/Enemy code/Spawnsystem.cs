@@ -10,6 +10,11 @@ public class Spawnsystem : MonoBehaviour {
 	public GameObject[] aliveenemy; //current enemy alive in area
 	public static bool deadenemy = false;
 
+	//testcode
+	public static int createpowerupcounter = 0;
+	public static int powerupdeadcounter = 5;
+	//testcode
+
 
 	// Use this for initialization
 	void Start () {

@@ -37,7 +37,17 @@ public class Playerhealth : MonoBehaviour {
 			{
 				phealth = phealth - attackdamage1;
 				pubhealth = phealth;
+
+				//testcode
+				HudGP.meterdistancespeed = .6f;
+				//testcode
 		
+			}
+			else
+			{
+				//testcode
+				HudGP.meterdistancespeed = 1f;
+				//testcode
 			}
 			
 			if(other.collider.tag == "eattack2")
@@ -45,6 +55,11 @@ public class Playerhealth : MonoBehaviour {
 
 				phealth = phealth - attackdamage2;
 				pubhealth = phealth;
+			}
+
+			if(other.collider.tag == "Enemy")
+			{
+
 			}
 		}
 

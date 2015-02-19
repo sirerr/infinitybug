@@ -16,7 +16,7 @@ GameObject:
   - 114: {fileID: 11435488}
   m_Layer: 0
   m_Name: upsidecross
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,6 +159,7 @@ MonoBehaviour:
   ehealth: 5
   ehealthtemp: 0
   edamageps: {fileID: 175960, guid: 9cba7ce9d446b8c4aa5b7dba70d20286, type: 2}
+  powerup1: {fileID: 197908, guid: d37c6c49f1af7814db150bc430d6af1e, type: 2}
 --- !u!114 &11435486
 MonoBehaviour:
   m_ObjectHideFlags: 1

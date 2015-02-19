@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 497904}
   - 33: {fileID: 3397904}
-  - 65: {fileID: 6597904}
   - 23: {fileID: 2397904}
   m_Layer: 0
   m_Name: side
@@ -27,7 +26,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 497906}
   - 33: {fileID: 3397906}
-  - 65: {fileID: 6597906}
   - 23: {fileID: 2397906}
   m_Layer: 0
   m_Name: up
@@ -46,7 +44,6 @@ GameObject:
   - 4: {fileID: 497908}
   - 65: {fileID: 6547578}
   - 114: {fileID: 11418904}
-  - 54: {fileID: 5445058}
   m_Layer: 0
   m_Name: PUP1
   m_TagString: Powerup
@@ -84,7 +81,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197908}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 4.13663059e-07}
   m_LocalPosition: {x: 7.98999977, y: 3.29999995, z: -54.8699989}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -146,21 +143,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197906}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &5445058
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 197908}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 1
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &6547578
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -172,30 +154,6 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.20000005, y: 3.20000005, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &6597904
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 197904}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &6597906
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 197906}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11418904
 MonoBehaviour:
@@ -253,7 +211,7 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 00010101
+        actionEnabled: 01010101
         actionIsOpen: 01010101
         actionStartIndex: 000000000a0000000d00000012000000
         actionHashCodes: 1d4debbb3708ec1a621d94f2621d94f2
@@ -292,7 +250,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: Untagged
+          value: Player
         - useVariable: 0
           name: 
           tooltip: 
@@ -301,7 +259,7 @@ MonoBehaviour:
           value: Untagged
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 000000000000000000000000010000000001000000000100007a430161747461636b7370656564010000000101000000002041006469650100000000636f6c6c6973696f6e000000000102000000636f6c6c6973696f6e0000000001
+        byteData: 0000000000000000000000000100000000010000000001000020c10161747461636b7370656564010000000101000000002041006469650100000000636f6c6c6973696f6e000000000102000000636f6c6c6973696f6e0000000001
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -392,7 +350,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 250
+        value: -10
       intVariables: []
       boolVariables: []
       stringVariables: []
