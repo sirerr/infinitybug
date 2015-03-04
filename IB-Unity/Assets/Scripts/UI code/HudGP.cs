@@ -19,12 +19,20 @@ public class HudGP : MonoBehaviour {
 	public int gameplaylimit = 0;
 	public UILabel endgame;
 	public GameObject spawnsystemref;
+	public string cursor1;
+	public UIAtlas hudatlas;
+	//testcode
+	public UISprite spriteCursor;
+	public Camera nguiCamera;
 	//testcode
 
 
 
 	// Use this for initialization
 	void Start () {
+
+
+
 		spawnsystemref = GameObject.Find("Spawnsystem");
 
 		playerhealthref = GameObject.FindWithTag("Player").GetComponent<Playerhealth>();
@@ -41,7 +49,28 @@ public class HudGP : MonoBehaviour {
 		StartCoroutine(Ltime());
 		//testcode
 	}
+	//test function
+
+	public static Vector3 GetScreenToGuiSpace(Vector3 pos, Transform localSpace, Camera cameraNGUI){
 	
+		// Since the screen can be of different than expected size, we want to convert
+		// mouse coordinates to view space, then convert that to world position.
+		pos.x = Mathf.Clamp01(pos.x / cameraNGUI.pixelWidth);
+		pos.y = Mathf.Clamp01(pos.y / cameraNGUI.pixelHeight);
+
+
+		//PROJECT INTO WORLD SPACE
+		Vector3 posWorld = cameraNGUI.ViewportToWorldPoint(pos);//ABSOLUTE
+
+		//CONVERT WORLD SPACE TO LOCAL SPACE
+		return localSpace.InverseTransformPoint(posWorld);
+		
+		
+	}
+	//test function
+
+
+
 	// Update is called once per frame
 	void Update () {
 
@@ -57,7 +86,11 @@ public class HudGP : MonoBehaviour {
 		}
 
 		//testcode
+		Vector3 vec1= GetScreenToGuiSpace( Input.mousePosition, spriteCursor.transform.parent, nguiCamera);
+		vec1.z = 0;
+		spriteCursor.transform.localPosition  = vec1;
 
+//		UICursor.Set(hudatlas, cursor1);
 		//testcode
 
 
@@ -73,7 +106,7 @@ public class HudGP : MonoBehaviour {
 	{
 	yield return new WaitForSeconds(timepermeters);
 	totalmeterdistance = meterdistancespeed + totalmeterdistance;
-	distancelabel.text = totalmeterdistance.ToString() + " M";
+	distancelabel.text = totalmeterdistance.ToString(".00") + " M";
 	
 		distancego();
 

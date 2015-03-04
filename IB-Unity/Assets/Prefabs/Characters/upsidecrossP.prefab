@@ -10,10 +10,10 @@ GameObject:
   - 4: {fileID: 435484}
   - 33: {fileID: 3335488}
   - 23: {fileID: 2335488}
-  - 64: {fileID: 6435488}
   - 95: {fileID: 9535488}
   - 114: {fileID: 11435484}
   - 114: {fileID: 11435488}
+  - 64: {fileID: 6411872}
   m_Layer: 0
   m_Name: upsidecross
   m_TagString: Enemy
@@ -45,6 +45,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 435488}
+  - 114: {fileID: 11489320}
   m_Layer: 0
   m_Name: upsidecrossP
   m_TagString: Untagged
@@ -117,7 +118,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135484}
   m_Mesh: {fileID: 4300000, guid: 7272ec2f5a0cea04192808e95c698b33, type: 3}
---- !u!64 &6435488
+--- !u!64 &6411872
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -127,7 +128,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_SmoothSphereCollisions: 1
+  m_SmoothSphereCollisions: 0
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 7272ec2f5a0cea04192808e95c698b33, type: 3}
 --- !u!95 &9535488
@@ -278,6 +279,25 @@ MonoBehaviour:
     StepFrame: 0
     activeStateName: 
   fsmTemplate: {fileID: 0}
+--- !u!114 &11489320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aad3d280b0f70b24cb37801aa111c51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateMachine: {fileID: 11400000, guid: 534a565aa65e25c4cb8848575c2c62ec, type: 2}
+  executingStateMachine: {fileID: 0}
+  anyState: {fileID: 0}
+  currentState: {fileID: 0}
+  group: 0
+  start: 1
+  debug: 1
+  isPaused: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

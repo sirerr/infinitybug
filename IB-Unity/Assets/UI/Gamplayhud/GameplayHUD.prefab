@@ -43,17 +43,17 @@ MonoBehaviour:
   mSprites:
   - name: target
     x: 0
-    y: 12
-    width: 500
-    height: 500
+    y: 17
+    width: 47
+    height: 47
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
+    paddingLeft: 1
+    paddingRight: 2
+    paddingTop: 2
+    paddingBottom: 1
   mPixelSize: 1
   mReplacement: {fileID: 0}
   mCoordinates: 0

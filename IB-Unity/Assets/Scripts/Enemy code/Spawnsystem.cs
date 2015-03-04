@@ -21,7 +21,12 @@ public class Spawnsystem : MonoBehaviour {
 		totalspawnpoints = espawnpoints.Length;
 		aliveenemy[0] = enemy1;
 		chosenspawnpoint = Random.Range(0,totalspawnpoints-1);
-		Instantiate(aliveenemy[0],espawnpoints[chosenspawnpoint].transform.position,espawnpoints[chosenspawnpoint].transform.rotation);
+		for(int i = 0; i<totalspawnpoints; i++)
+		{
+			Instantiate(enemy1,espawnpoints[i].transform.position,espawnpoints[i].transform.rotation);
+		}
+
+	
 	}
 
 	public void MakeE()
@@ -36,7 +41,7 @@ public class Spawnsystem : MonoBehaviour {
 
 		if(deadenemy)
 		{
-			MakeE();
+	//		MakeE();
 		}
 	
 	}
