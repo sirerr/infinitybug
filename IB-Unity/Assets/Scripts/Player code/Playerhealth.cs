@@ -59,7 +59,8 @@ public class Playerhealth : MonoBehaviour {
 
 			if(other.collider.tag == "Enemy")
 			{
-
+				Destroy(other.transform.root.gameObject);
+				HudGP.meterdistancespeed = .6f;
 			}
 		}
 

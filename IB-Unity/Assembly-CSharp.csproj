@@ -814,6 +814,7 @@
      <Compile Include="Assets\Scripts\UI code\HudGP.cs" />
      <Compile Include="Assets\Scripts\World Code\Cameramovement.cs" />
      <Compile Include="Assets\Scripts\World Code\CenterControl.cs" />
+     <Compile Include="Assets\Scripts\World Code\Ewall.cs" />
      <Compile Include="Assets\State Machine\Scripts\Actions\Animator\AnimatorAction.cs" />
      <Compile Include="Assets\State Machine\Scripts\Actions\Animator\CrossFade.cs" />
      <Compile Include="Assets\State Machine\Scripts\Actions\Animator\GetAvatar.cs" />

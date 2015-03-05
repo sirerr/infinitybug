@@ -15,8 +15,9 @@ public class PlayerAnimation : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+		if(gameObject.name == "Player1"){
 		playeranim.SetBool("indefense",defend);
-
+		}
 		if(Input.GetAxis("Defense") >0f )
 		   {
 			defend = true;
