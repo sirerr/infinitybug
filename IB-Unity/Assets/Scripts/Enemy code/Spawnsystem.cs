@@ -18,6 +18,9 @@ public class Spawnsystem : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		espawnpoints = GameObject.FindGameObjectsWithTag("espawnp");
+
 		totalspawnpoints = espawnpoints.Length;
 		aliveenemy[0] = enemy1;
 		chosenspawnpoint = Random.Range(0,totalspawnpoints-1);
@@ -26,14 +29,26 @@ public class Spawnsystem : MonoBehaviour {
 			Instantiate(enemy1,espawnpoints[i].transform.position,espawnpoints[i].transform.rotation);
 		}
 
-	
+		StartCoroutine(createlooper());
 	}
 
 	public void MakeE()
 	{
-		chosenspawnpoint = Random.Range(0,totalspawnpoints-1);
-		Instantiate(aliveenemy[0],espawnpoints[chosenspawnpoint].transform.position,espawnpoints[chosenspawnpoint].transform.rotation);
-		deadenemy = false;
+//		chosenspawnpoint = Random.Range(0,totalspawnpoints-1);
+//		Instantiate(aliveenemy[0],espawnpoints[chosenspawnpoint].transform.position,espawnpoints[chosenspawnpoint].transform.rotation);
+//		deadenemy = false;
+
+		//looper code
+		for(int i = 0; i<totalspawnpoints; i++)
+		{
+			Instantiate(enemy1,espawnpoints[i].transform.position,espawnpoints[i].transform.rotation);
+		}
+
+		StartCoroutine(createlooper());
+		//loopercode
+
+
+
 	}
 
 	// Update is called once per frame
@@ -44,6 +59,12 @@ public class Spawnsystem : MonoBehaviour {
 	//		MakeE();
 		}
 	
+	}
+
+	IEnumerator createlooper()
+	{
+		yield return new WaitForSeconds(5f);
+		MakeE();
 	}
 
 
